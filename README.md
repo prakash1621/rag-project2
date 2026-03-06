@@ -2,7 +2,7 @@
 
 Assignment 2: Production-Grade RAG Pipeline  
 **Student:** Prakash  
-**Submission Date:** March 6, 2026
+**Submission Date:** March 5, 2026
 
 ---
 
