@@ -616,43 +616,9 @@ Assuming:
 - **Savings: 70% reduction in LLM costs**
 
 ---
+ 
 
-## 6. Future Enhancements
-
-### 6.1 Redis Backend
-```python
-class RedisCache:
-    def __init__(self, host, port, ttl):
-        self.redis = redis.Redis(host=host, port=port)
-        self.ttl = ttl
-    
-    def get(self, key):
-        value = self.redis.get(key)
-        return json.loads(value) if value else None
-    
-    def set(self, key, value):
-        self.redis.setex(key, self.ttl, json.dumps(value))
-```
-
-### 6.2 Cache Analytics Dashboard
-- Real-time hit/miss rates
-- Latency distributions
-- Cost savings metrics
-- Popular queries
-
-### 6.3 Adaptive Thresholds
-- Monitor false positive rate
-- Auto-tune similarity thresholds
-- A/B test different configurations
-
-### 6.4 Hybrid Chunking
-- Auto-detect document type
-- Apply best strategy per document
-- Combine strategies for complex docs
-
----
-
-## 7. Testing & Validation
+## 6. Testing & Validation
 
 ### Unit Tests (Recommended)
 ```python
@@ -684,7 +650,7 @@ def test_full_pipeline():
 
 ---
 
-## 8. Conclusion
+## 7. Conclusion
 
 This architecture implements a production-grade RAG pipeline with:
 
