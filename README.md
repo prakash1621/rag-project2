@@ -25,7 +25,7 @@ This project implements a production-grade RAG (Retrieval-Augmented Generation) 
 
 ```
 rag-project2/
-├── README_V2.md              # This file
+├── README.md              # This file
 ├── config.yaml               # All configurable parameters
 ├── .env.example              # Environment variables template
 ├── requirements.txt          # Python dependencies
@@ -164,9 +164,7 @@ Query 2: "What's the process for resolving Teradata data issues?"
 Query 1: "Explain the Teradata discrepancy workflow"
 → Full pipeline (600ms)
 
-Query 2: "Summarize Teradata discrepancy handling"
-→ Tier 3 cache HIT (350ms) 📦
-→ Skipped vector DB, only LLM call
+ 
 ```
 
 ---
@@ -314,6 +312,7 @@ See `docs/architecture.md` for:
 - Design decisions & trade-offs
 - Query flow walkthroughs
 - Performance analysis
+  
 
 ---
  
