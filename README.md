@@ -1,7 +1,7 @@
 # RAG Pipeline v2 - Production-Grade RAG with Advanced Chunking & Multi-Tier Caching
 
 Assignment 2: Production-Grade RAG Pipeline  
-**Student:** Sathvik  
+**Student:** Prakash  
 **Submission Date:** March 6, 2026
 
 ---
